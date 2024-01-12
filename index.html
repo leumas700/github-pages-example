@@ -1,1 +1,35 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Background Fade</title>
+    <style>
+        body {
+            transition: background-color 2s;
+        }
+    </style>
+</head>
+<body onload="changeBackground();">
+
+<h1>Welcome to the new Mahara!</h1>
+  
+<script>
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    function changeBackground() {
+        var newColor = getRandomColor();
+        document.body.style.backgroundColor = newColor;
+
+        // Ändere den Hintergrund jede Sekunde (1000 Millisekunden)
+        setTimeout(changeBackground, 1000);
+    }
+</script>
+
+</body>
+</html>
