@@ -94,7 +94,7 @@ end
 
 ### Small image
 
-![BBB Icon](public/Logo_BBB.svg)
+![BBB Icon](public/Logo%20kleiner.png)
 
 ### Large image
 
